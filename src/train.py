@@ -87,7 +87,7 @@ def train(data_path, model_path, random_state, n_estimators, max_depth):
         filename=model_path
         pickle.dump(best_model,open(filename,'wb'))
 
-        print(f"Model saved to {model_path}")
+        print(f"Model saved as pickle file {model_path}")
 
     return best_model, grid_search.best_params_, accuracy, grid_search.cv_results_
 
